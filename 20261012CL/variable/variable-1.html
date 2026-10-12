@@ -5,5 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>변수 1</title>
   </head>
-  <body></body>
+  <body>
+    <script>
+      // 변수 공부
+      // 변수 : 데이터를 담는 상자
+      // 변수 : 선언과 할당이 있음.
+      let name = "홍길동";
+      console.log(name);
+      name = "이순신";
+      console.log(name);
+      const age = 20;
+      console.log(age);
+      // let 재할당 가능 / const는 재할당 안됨
+      // let과 const 모두 중복은 안됨
+      let name1 = "공길동";
+      const age1 = 40;
+      let userName = prompt("이름을 입력하세요", "OOO");
+      let userAge = prompt("나이를 입력하세요", "OO");
+      console.log(userName);
+      document.write(`    <h1>이름 : ${userName} </h1>
+    <p>나이 : ${userAge}</p>`);
+    </script>
+  </body>
 </html>
