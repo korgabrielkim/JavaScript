@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!-- saved from url=(0088)file:///C:/Users/user/Documents/Codex/2026-10-12/we-8/outputs/chef-studio-web/index.html -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="세계의 셰프와 함께하는 쿠킹 클래스, Chef’s Studio.">
+    <title>Chef’s Studio — 쿠킹 클래스</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./Chef’s Studio — 쿠킹 클래스_files/css2" rel="stylesheet">
+    <link rel="stylesheet" href="./Chef’s Studio — 쿠킹 클래스_files/styles.css">
+    <script src="./Chef’s Studio — 쿠킹 클래스_files/app.js" defer=""></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="file:///C:/Users/user/Documents/Codex/2026-10-12/we-8/outputs/chef-studio-web/index.html#top" aria-label="Chef’s Studio 홈">Chef’s Studio</a>
+        <nav class="primary-nav" aria-label="주요 메뉴">
+          <a href="file:///C:/Users/user/Documents/Codex/2026-10-12/we-8/outputs/chef-studio-web/index.html#classes" data-action="classes">쿠킹클래스</a>
+          <button type="button" data-action="about">소개</button>
+          <button type="button" data-action="login">로그인</button>
+          <form class="search-form" role="search" hidden="">
+            <label class="sr-only" for="search-input">쿠킹 클래스 검색</label>
+            <input id="search-input" type="search" placeholder="클래스 검색" autocomplete="off">
+          </form>
+          <button class="search-toggle" type="button" aria-label="검색 열기" aria-expanded="false" data-action="search">
+            <span class="search-glyph" aria-hidden="true"></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top" class="page-shell">
+      <section class="intro" aria-labelledby="page-title">
+        <div class="intro-copy">
+          <h1 id="page-title">안녕하세요!! <span aria-hidden="true">👨‍🍳👩‍🍳</span></h1>
+          <p>최고의 요리 전문가와 함께 배우는 쿠킹 클래스를 지금 만나보세요</p>
+        </div>
+        <div class="filter-wrap">
+          <button class="filter-button" type="button" aria-expanded="false" aria-controls="filter-panel" data-action="filter">
+            <img src="file:///C:/Users/user/Documents/Codex/2026-10-12/we-8/outputs/chef-studio-web/assets/filter-left.svg" alt="" width="27" height="27" data-missing="true">
+            <span class="filter-icon-fallback" aria-hidden="true">☷</span>
+            필터
+          </button>
+          <div id="filter-panel" class="filter-panel" hidden="">
+            <label for="country-filter">국가</label>
+            <select id="country-filter">
+              <option value="all">모든 국가</option>
+            <option value="덴마크">덴마크</option><option value="멕시코">멕시코</option><option value="미국">미국</option><option value="싱가포르">싱가포르</option><option value="이탈리아">이탈리아</option><option value="태국">태국</option><option value="프랑스">프랑스</option><option value="한국">한국</option></select>
+            <label for="sort-order">정렬</label>
+            <select id="sort-order">
+              <option value="featured">추천순</option>
+              <option value="price-asc">가격 낮은순</option>
+              <option value="price-desc">가격 높은순</option>
+              <option value="country">국가 이름순</option>
+            </select>
+            <button class="reset-button" type="button" data-action="reset">초기화</button>
+          </div>
+        </div>
+      </section>
+
+      <p id="results-status" class="results-status" aria-live="polite"></p>
+      <section id="classes" class="class-grid" aria-label="쿠킹 클래스 목록">
+    <article class="class-card" data-id="pasta-italy">
+      <button class="card-open" type="button" data-action="detail" data-id="pasta-italy" aria-label="이탈리아 이탈리아 셰프에게 직접 배우는 파스타 요리 상세 보기">
+        <div class="card-photo">
+          <img src="file:///C:/Users/user/Documents/Codex/2026-10-12/we-8/outputs/chef-studio-web/assets/pasta-italy.png" alt="셰프가 포크로 들어 올린 이탈리아 파스타" loading="lazy" data-fallback-title="이탈리아 쿠킹 클래스" hidden="">
+          <div class="photo-fallback" aria-hidden="true"><strong>🇮🇹</strong><span>이미지를 추가해 주세요</span></div>
+        </div>
+        <div class="card-body">
+          <div class="card-country"><span>이탈리아</span><span class="card-flag emoji" aria-label="이탈리아 국기">🇮🇹</span></div>
+          <p class="card-title">이탈리아 셰프에게 직접 배우는 파스타 요리</p>
+          <p class="card-price">1인 35,000원</p>
+        </div>
+      </button>
+    </article>
+    <article class="class-card" data-id="home-singapore">
+      <button class="card-open" type="button" data-action="detail" data-id="home-singapore" aria-label="싱가포르 도시 농장에서 재배한 재료로 맛보는 집밥 상세 보기">
+        <div class="card-photo">
+          <img src="file:///C:/Users/user/Documents/Codex/2026-10-12/we-8/outputs/chef-studio-web/assets/pumpkin-soup.png" alt="제철 재료로 만든 따뜻한 수프" loading="lazy" data-fallback-title="싱가포르 쿠킹 클래스" hidden="">
+          <div class="photo-fallback" aria-hidden="true"><strong>🇸🇬</strong><span>이미지를 추가해 주세요</span></div>
+        </div>
+        <div class="card-body">
+          <div class="card-country"><span>싱가포르</span><span class="card-flag emoji" aria-label="싱가포르 국기">🇸🇬</span></div>
+          <p class="card-title">도시 농장에서 재배한 재료로 맛보는 집밥</p>
+          <p class="card-price">1인 28,000원</p>
+        </div>
+      </button>
+    </article>
+    <article class="class-card" data-id="truffle-france">
+      <button class="card-open" type="button" data-action="detail" data-id="truffle-france" aria-label="프랑스 초콜릿 트러플 마스터 클래스 + 프랑스 와인 상세 보기">
+        <div class="card-photo">
+          <img src="file:///C:/Users/user/Documents/Codex/2026-10-12/we-8/outputs/chef-studio-web/assets/chocolate-truffle.png" alt="수제 초콜릿 트러플" loading="lazy" data-fallback-title="프랑스 쿠킹 클래스" hidden="">
+          <div class="photo-fallback" aria-hidden="true"><strong>🇫🇷</strong><span>이미지를 추가해 주세요</span></div>
+        </div>
+        <div class="card-body">
+          <div class="card-country"><span>프랑스</span><span class="card-flag emoji" aria-label="프랑스 국기">🇫🇷</span></div>
+          <p class="card-title">초콜릿 트러플 마스터 클래스 + 프랑스 와인</p>
+          <p class="card-price">1인 30,000원</p>
+        </div>
+      </button>
+    </article>
+    <article class="class-card" data-id="tacos-mexico">
+      <button class="card-open" type="button" data-action="detail" data-id="tacos-mexico" aria-label="멕시코 처음부터 끝까지 함께하는 멕시코 요리 상세 보기">
+        <div class="card-photo">
+          <img src="file:///C:/Users/user/Documents/Codex/2026-10-12/we-8/outputs/chef-studio-web/assets/tacos-mexico.png" alt="라임과 함께 담아낸 멕시코 타코" loading="lazy" data-fallback-title="멕시코 쿠킹 클래스" hidden="">
+          <div class="photo-fallback" aria-hidden="true"><strong>🇲🇽</strong><span>이미지를 추가해 주세요</span></div>
+        </div>
+        <div class="card-body">
+          <div class="card-country"><span>멕시코</span><span class="card-flag emoji" aria-label="멕시코 국기">🇲🇽</span></div>
+          <p class="card-title">처음부터 끝까지 함께하는 멕시코 요리</p>
+          <p class="card-price">1인 35,000원</p>
+        </div>
+      </button>
+    </article>
+    <article class="class-card" data-id="tangerine-korea">
+      <button class="card-open" type="button" data-action="detail" data-id="tangerine-korea" aria-label="한국 제주도에서 온 달달한 감귤 디저트 상세 보기">
+        <div class="card-photo">
+          <img src="file:///C:/Users/user/Documents/Codex/2026-10-12/we-8/outputs/chef-studio-web/assets/tangerine-korea.png" alt="제주 감귤과 잎사귀가 놓인 테이블" loading="lazy" data-fallback-title="한국 쿠킹 클래스" hidden="">
+          <div class="photo-fallback" aria-hidden="true"><strong>🇰🇷</strong><span>이미지를 추가해 주세요</span></div>
+        </div>
+        <div class="card-body">
+          <div class="card-country"><span>한국</span><span class="card-flag emoji" aria-label="한국 국기">🇰🇷</span></div>
+          <p class="card-title">제주도에서 온 달달한 감귤 디저트</p>
+          <p class="card-price">1인 23,000원</p>
+        </div>
+      </button>
+    </article>
+    <article class="class-card" data-id="brunch-thailand">
+      <button class="card-open" type="button" data-action="detail" data-id="brunch-thailand" aria-label="태국 좀 더 가벼운 식사를 하고 싶은 분들을 위해 상세 보기">
+        <div class="card-photo">
+          <img src="file:///C:/Users/user/Documents/Codex/2026-10-12/we-8/outputs/chef-studio-web/assets/brunch-thailand.png" alt="커피와 함께 준비한 가벼운 브런치" loading="lazy" data-fallback-title="태국 쿠킹 클래스" hidden="">
+          <div class="photo-fallback" aria-hidden="true"><strong>🇹🇭</strong><span>이미지를 추가해 주세요</span></div>
+        </div>
+        <div class="card-body">
+          <div class="card-country"><span>태국</span><span class="card-flag emoji" aria-label="태국 국기">🇹🇭</span></div>
+          <p class="card-title">좀 더 가벼운 식사를 하고 싶은 분들을 위해</p>
+          <p class="card-price">1인 15,000원</p>
+        </div>
+      </button>
+    </article>
+    <article class="class-card" data-id="pancakes-denmark">
+      <button class="card-open" type="button" data-action="detail" data-id="pancakes-denmark" aria-label="덴마크 유럽식 아침 준비하기 상세 보기">
+        <div class="card-photo">
+          <img src="file:///C:/Users/user/Documents/Codex/2026-10-12/we-8/outputs/chef-studio-web/assets/pancakes-denmark.png" alt="시럽을 곁들인 팬케이크" loading="lazy" data-fallback-title="덴마크 쿠킹 클래스" hidden="">
+          <div class="photo-fallback" aria-hidden="true"><strong>🇩🇰</strong><span>이미지를 추가해 주세요</span></div>
+        </div>
+        <div class="card-body">
+          <div class="card-country"><span>덴마크</span><span class="card-flag emoji" aria-label="덴마크 국기">🇩🇰</span></div>
+          <p class="card-title">유럽식 아침 준비하기</p>
+          <p class="card-price">1인 18,000원</p>
+        </div>
+      </button>
+    </article>
+    <article class="class-card" data-id="pesto-us">
+      <button class="card-open" type="button" data-action="detail" data-id="pesto-us" aria-label="미국 조용한 농가에서 만들어보는 유기농 파스타 상세 보기">
+        <div class="card-photo">
+          <img src="file:///C:/Users/user/Documents/Codex/2026-10-12/we-8/outputs/chef-studio-web/assets/pesto-us.png" alt="바질 페스토 파스타" loading="lazy" data-fallback-title="미국 쿠킹 클래스" hidden="">
+          <div class="photo-fallback" aria-hidden="true"><strong>🇺🇸</strong><span>이미지를 추가해 주세요</span></div>
+        </div>
+        <div class="card-body">
+          <div class="card-country"><span>미국</span><span class="card-flag emoji" aria-label="미국 국기">🇺🇸</span></div>
+          <p class="card-title">조용한 농가에서 만들어보는 유기농 파스타</p>
+          <p class="card-price">1인 35,000원</p>
+        </div>
+      </button>
+    </article></section>
+      <p id="empty-state" class="empty-state" hidden="">검색 결과가 없습니다. 다른 검색어나 필터를 선택해 보세요.</p>
+    </main>
+
+    <dialog id="detail-dialog" class="dialog" aria-labelledby="detail-title">
+      <button class="dialog-close" type="button" aria-label="닫기" data-action="close-dialog">×</button>
+      <div id="detail-content"></div>
+    </dialog>
+
+    <dialog id="info-dialog" class="dialog info-dialog" aria-labelledby="info-title">
+      <button class="dialog-close" type="button" aria-label="닫기" data-action="close-dialog">×</button>
+      <div id="info-content"></div>
+    </dialog>
+    <div class="dialog-backdrop" hidden=""></div>
+  
+
+</body></html>

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="세계의 셰프와 함께하는 쿠킹 클래스, Chef’s Studio." />
+    <title>Chef’s Studio — 쿠킹 클래스</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="Chef’s Studio 홈">Chef’s Studio</a>
+        <nav class="primary-nav" aria-label="주요 메뉴">
+          <a href="#classes" data-action="classes">쿠킹클래스</a>
+          <button type="button" data-action="about">소개</button>
+          <button type="button" data-action="login">로그인</button>
+          <form class="search-form" role="search" hidden>
+            <label class="sr-only" for="search-input">쿠킹 클래스 검색</label>
+            <input id="search-input" type="search" placeholder="클래스 검색" autocomplete="off" />
+          </form>
+          <button class="search-toggle" type="button" aria-label="검색 열기" aria-expanded="false" data-action="search">
+            <span class="search-glyph" aria-hidden="true"></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top" class="page-shell">
+      <section class="intro" aria-labelledby="page-title">
+        <div class="intro-copy">
+          <h1 id="page-title">안녕하세요!! <span aria-hidden="true">👨‍🍳👩‍🍳</span></h1>
+          <p>최고의 요리 전문가와 함께 배우는 쿠킹 클래스를 지금 만나보세요</p>
+        </div>
+        <div class="filter-wrap">
+          <button class="filter-button" type="button" aria-expanded="false" aria-controls="filter-panel" data-action="filter">
+            <img src="assets/filter-left.svg" alt="" width="27" height="27" />
+            <span class="filter-icon-fallback" aria-hidden="true">☷</span>
+            필터
+          </button>
+          <div id="filter-panel" class="filter-panel" hidden>
+            <label for="country-filter">국가</label>
+            <select id="country-filter">
+              <option value="all">모든 국가</option>
+            </select>
+            <label for="sort-order">정렬</label>
+            <select id="sort-order">
+              <option value="featured">추천순</option>
+              <option value="price-asc">가격 낮은순</option>
+              <option value="price-desc">가격 높은순</option>
+              <option value="country">국가 이름순</option>
+            </select>
+            <button class="reset-button" type="button" data-action="reset">초기화</button>
+          </div>
+        </div>
+      </section>
+
+      <p id="results-status" class="results-status" aria-live="polite"></p>
+      <section id="classes" class="class-grid" aria-label="쿠킹 클래스 목록"></section>
+      <p id="empty-state" class="empty-state" hidden>검색 결과가 없습니다. 다른 검색어나 필터를 선택해 보세요.</p>
+    </main>
+
+    <dialog id="detail-dialog" class="dialog" aria-labelledby="detail-title">
+      <button class="dialog-close" type="button" aria-label="닫기" data-action="close-dialog">×</button>
+      <div id="detail-content"></div>
+    </dialog>
+
+    <dialog id="info-dialog" class="dialog info-dialog" aria-labelledby="info-title">
+      <button class="dialog-close" type="button" aria-label="닫기" data-action="close-dialog">×</button>
+      <div id="info-content"></div>
+    </dialog>
+    <div class="dialog-backdrop" hidden></div>
+  </body>
+</html>
