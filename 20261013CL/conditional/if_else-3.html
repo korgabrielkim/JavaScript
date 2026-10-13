@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>조건문 사용 예제</title>
+  </head>
+  <body>
+    <script>
+      // 로그인 체크
+      let isLogin = false;
+      if (isLogin) {
+        console.log("로그인 상태");
+      } else {
+        console.log("로그인 해주세요.");
+      }
+      //   입력값 검사
+      let input = "";
+      if (input === "") {
+        console.log("값을 입력하세요!");
+      }
+      //   쇼핑몰 할인 계산
+      let price = 12000;
+      if (price >= 10000) {
+        console.log("할인 적용!");
+      }
+      // 모바일과 PC구분
+      let isMobile = false;
+      if (isMobile) {
+        console.log("모바일 화면");
+      } else {
+        console.log("PC화면");
+      }
+    </script>
+  </body>
+</html>

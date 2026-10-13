@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>연산자</title>
+  </head>
+  <body>
+    <button id="btn">클릭 +</button>
+    <p class="counter">클릭횟수 : 0</p>
+    <script>
+      let clickBtn = document.querySelector("#btn"); //querySelector("#요소") : 요소를 지정하는 명령어.
+      console.log(clickBtn);
+      // 클릭횔수 담기
+      let counter = document.querySelector(".counter");
+      console.log(counter);
+      // 0을 담는다.
+      let count = 0;
+      clickBtn.addEventListener("click", function () {
+        // console.log("클릭완료");
+        // console.log(count);
+        count++;
+        console.log(count);
+        counter.textContent = `클릭횟수 : ${count}`;
+      }); // addEventListener("이벤트명", 함수function(객체){기능})
+    </script>
+  </body>
+</html>

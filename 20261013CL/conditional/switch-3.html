@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: cadetblue;
+        color: white;
+        font-size: 24px;
+      }
+      p {
+        text-align: center;
+        margin-top: 150px;
+      }
+      strong {
+        font-size: 32px;
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      let session = prompt(
+        "관심 세션을 선택해주세요. 1-마케팅,2-개발,3-디자인",
+        "1,2,3중에 고르세요",
+      );
+      switch (session) {
+        case "1":
+          document.write(
+            `<p>마케팅 세션은 <strong>101호</strong>에서 진행합니다.</p>`,
+          );
+          break;
+        case "2":
+          document.write(
+            `<p>개발 세션은 <strong>102호</strong>에서 진행합니다.</p>`,
+          );
+          break;
+        case "3":
+          document.write(
+            `<p>디자인 세션은 <strong>103호</strong>에서 진행합니다.</p>`,
+          );
+          break;
+        default:
+          alert("잘 못 입력하셨습니다. 1,2,3 중에서만 입력해 주세요!");
+      }
+    </script>
+  </body>
+</html>

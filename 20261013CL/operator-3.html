@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>증가 감소 연산자</title>
+  </head>
+  <body>
+    <h2 id="counter">클릭횟수 : 0</h2>
+    <button id="increase">증가(+)</button>
+    <button id="decrease">감소(-)</button>
+    <button id="clear">초기화</button>
+    <script>
+      let counter = document.querySelector("#counter");
+      let inc = document.querySelector("#increase");
+      let dec = document.querySelector("#decrease");
+      let clear = document.querySelector("#clear");
+      let count = 0;
+      console.log(counter);
+      console.log(inc);
+      console.log(dec);
+      console.log(count);
+      // 증가 함수
+      inc.addEventListener("click", function () {
+        // console.log("click");
+        count++;
+        counter.textContent = `클릭횟수 : ${count}`;
+      });
+      // 감소 함수
+      dec.addEventListener("click", function () {
+        count--;
+        counter.textContent = `클릭횟수 : ${count}`;
+      });
+      clear.addEventListener("click", function () {
+        count = 0;
+        counter.textContent = `클릭횟수 : ${count}`;
+      });
+    </script>
+  </body>
+</html>

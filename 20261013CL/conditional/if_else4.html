@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 로그인 상태 변경 -->
+    <button id="loginBtn">로그인</button>
+    <p id="txt">로그아웃 상태</p>
+    <!-- 좋아요 버튼 -->
+    <button id="likeBtn">🤍좋아요</button>
+    <script>
+      const btn = document.querySelector("#loginBtn");
+      const txt = document.querySelector("#txt");
+      console.log(txt);
+      //   로그인 상태
+      let isLogin = false;
+      btn.addEventListener("click", function () {
+        // console.log("click"); : 작동 확인.
+        if (isLogin) {
+          // 로그인 상태 → 로그아웃
+          isLogin = false;
+          txt.textContent = "로그아웃 상태";
+          btn.textContent = "로그인";
+        } else {
+          // 로그아웃 → 로그인 상태
+          isLogin = true;
+          txt.textContent = "로그인 상태";
+          btn.textContent = "로그아웃";
+        }
+      });
+      //   ------------- 좋아요 버튼
+      const likeBtn = document.querySelector("#likeBtn");
+      let isLike = false;
+      likeBtn.addEventListener("click", () => {
+        // function(){} = () => {}
+        isLike = !isLike; // 상태 토글
+        // console.log(isLike); : 작동 확인.
+        if (isLike) {
+          likeBtn.textContent = "❤️좋아요";
+        } else {
+          likeBtn.textContent = "🤍좋아요";
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>스위치문 2</title>
+  </head>
+  <body>
+    <script>
+      let site = prompt(
+        "네이버, 구글, 유튜브 중 연결을 원하는 사이트를 적으시오",
+        "ex) 네이버",
+      );
+      let url; // 변수 선언만 한 것!
+      switch (site) {
+        case "구글":
+          url = "https://www.google.com";
+          break;
+        case "네이버":
+          url = "https://www.naver.com";
+          break;
+        case "유튜브":
+          url = "https://www.youtube.com";
+          break;
+        default:
+          alert("보기에 없는 사이트 입니다.");
+      }
+      window.open(`${url}`, "_self"); // , "_self"를 추가하면 원페이지에서 이동을 하게 됨.
+    </script>
+  </body>
+</html>
