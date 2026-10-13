@@ -1,0 +1,41 @@
+@import url("reset.css");
+body {
+  background-color: bisque;
+}
+html {
+  font-size: 10px;
+}
+h1 {
+  /* display: none; */
+  font-size: 3.2rem;
+}
+h2 {
+  font-size: 2.8rem;
+}
+h3 {
+  font-size: 1.8rem;
+}
+h4 {
+  font-size: 1.4rem;
+}
+.box {
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+  min-width: 250px;
+}
+@media (max-width: 390px) {
+  .box {
+    border-radius: 20px;
+    /* overflow: hidden; */
+  }
+  h1 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    display: block;
+    text-align: center;
+  }
+}

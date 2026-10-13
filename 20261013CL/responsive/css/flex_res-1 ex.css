@@ -1,0 +1,49 @@
+@import url("reset.css");
+html {
+  font-size: 10px;
+}
+.img-txt h2 {
+  font-size: 3rem;
+}
+.img-txt p {
+  font-size: 1.5rem;
+}
+.container {
+  width: 90%;
+  max-width: 1024px;
+  min-width: 320px;
+  margin: auto;
+  background-color: bisque;
+  padding: 5%;
+}
+.container li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2%;
+  gap: 2%;
+  background-color: blanchedalmond;
+}
+.container li:last-child {
+  margin-bottom: 0;
+}
+.img-box,
+.img-txt {
+  width: 50%;
+}
+@media (max-width: 425px) {
+  .container li {
+    flex-direction: column;
+    width: 100%;
+  }
+  .img-box,
+  .img-txt {
+    width: 100%;
+  }
+  .img-box {
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  html {
+    font-size: 8.5px;
+  }
+}
