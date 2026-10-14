@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul id="fruitList"></ul>
+    <script>
+      // 더미데이터
+      let list = document.querySelector("#fruitList");
+      let fruits = [
+        "사과",
+        "바나나",
+        "포도",
+        "망고",
+        "수박",
+        "바나나",
+        "포도",
+        "망고",
+        "수박",
+      ];
+      console.log(fruits); //item : 각 매개 변수를 의미함
+      fruits.forEach((item, index) => {
+        console.log(item, index);
+        list.innerHTML += `<li>${index + 1}.${item}</li>`; //+= : 더해서 추가하라는 의미 if)= 만 사용하면 마지막 변수 하나만 표시됨.
+      });
+    </script>
+  </body>
+</html>

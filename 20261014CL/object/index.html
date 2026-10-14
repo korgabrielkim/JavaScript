@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 객체 : 여러가지 정보를 하나로 묶어 놓은 것 -->
+    <!-- 내장 객체 : 자바스크립트가 미리 만들어 놓은 객체 -->
+    <!-- 내장 객체 ex) Date(날짜), Array(정보 묶어 놓은 것), String(글자 길이), math(수학)  -->
+    <script>
+      // 1. String
+      const str = "hello world";
+      console.log(str);
+      console.log(str.length); // length : 문자의 갯수 및 길이 파악
+      console.log(str.toUpperCase()); // toUpperCase() : 문자의 대문자 변환하는 매서드
+      console.log(str.includes("world")); // includes : 해당하는 내용이 있는지 확인
+      // 2. Array
+      const arr = [1, 2, 3, 4]; //[] 대괄호가 있는 것은 배열이라고 보면 됨. {} 중괄호는 객체 () 소괄호는 매서드.
+      console.log(arr);
+      console.log(arr.length);
+      console.log(arr.push(5)); //push() : 괄호 안에 내용을 추가
+      console.log(arr.join("/")); //join("") : 배열의 요소들을 하나의 문자열로 합치는 메서드
+      // 3. Date
+      const today = new Date();
+      console.log(today);
+      console.log(today.getMonth() + 1); // 달 정보를 가져올 때 1월을 0으로 할당하기 때문에 +1을 해줌
+      console.log(today.toLocaleDateString());
+      console.log(today.getFullYear());
+      // 4. Math
+      console.log(Math.PI); // 파이 값
+      console.log(Math.max(10, 23, 100)); // 최대 값 산출
+      console.log(Math.min(10, 23, 100)); // 최소 값 산출
+      console.log(Math.random()); // random() : 0에서 1사이의 난수를 출력 (0과 1은 포함하지 않음)
+    </script>
+  </body>
+</html>

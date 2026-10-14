@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array 객체</title>
+  </head>
+  <body>
+    <script>
+      // Array는 여러 데이터를 순서대로 관리
+      let arr = [1, 2, 3, 4];
+      console.log(arr);
+      // 1. length 속성
+      console.log(arr.length);
+      // 2. push() : 배열 끝 요소를 추가하는 메서드
+      arr.push(8);
+      console.log(arr);
+      // 3. pop() : 배열 끝 요소를 제거하는 매서드
+      arr.pop();
+      console.log(arr);
+      // 4. shift() : 배열 첫 요소 제거
+      arr.shift();
+      console.log(arr);
+      // 5. unshift() : 배열 앞에 요소를 추가하는 메서드
+      arr.unshift(7);
+      console.log(arr);
+      // 6. indexof() : 요소 위치 반환 (index 번호)
+      console.log(arr.indexOf(2));
+      console.log(arr.indexOf(7));
+      // 7. slice() : 배열 일부를 반환
+      // 시작_위치: 가져오기를 시작할 인덱스(포함)
+      // 끝_위치: 가져오기를 끝낼 인덱스. (미포함)
+      // 끝 위치를 생략하면 마지막까지!
+      console.log(arr.slice(1, 3));
+      // 8. splice() : 배열 요소 추가 / 삭제
+      // splice(시작인덱스():어디서부터, 삭제갯수():몇개 삭제할지, 추가할 값 n)
+      console.log(arr);
+      arr.splice(1, 2, 44, 50, 100);
+      console.log(arr);
+      // 9. join() : 배열을 문자열로 변환
+      console.log(arr.join("***"));
+      //10. forEach() : 각 요소에 대해 함수 실행
+      arr.forEach((a) => {
+        console.log(a);
+        document.write(`<p>${a}</p>`);
+      });
+    </script>
+  </body>
+</html>

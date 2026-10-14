@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String 객체</title>
+  </head>
+  <body>
+    <script>
+      // 1. length 속성
+      const str = "hello, JavaScript";
+      console.log(str.length);
+
+      // 2. toUpperCase() toLowerCase() 속성
+      console.log(str.toLowerCase());
+      console.log(str.toUpperCase());
+
+      // 3. includes() 해당 내용이 있는지 확인 매서드
+      const email = "user@example.com";
+      console.log(email.includes("@"));
+
+      // 4. trim() 공백제거 매서드
+      const input = "he llo ";
+      console.log(input.length);
+      console.log(input.trim().length);
+      // 5. slice(시작, 끝) : 시작 인덱스(포함) , 끝 인덱스(미포함, 바로 앞까지 자름) ※ 0부터 시작임
+      const str2 = "JavaScript";
+      console.log(str2.slice(4, 10));
+
+      // 6. replace() : 문자 교체
+      const sentence = "I like Java";
+      console.log(sentence.replace("Java", "JavaScript"));
+
+      // 7. split() : 문자 분리
+      const data = "apple,banana,orange";
+      console.log(data.split(""));
+    </script>
+  </body>
+</html>
