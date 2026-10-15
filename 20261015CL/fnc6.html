@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .submenu {
+        display: none;
+      }
+      .submenu.active {
+        display: block;
+      }
+      /* .active는 JavaScript로 작동하게 함 */
+    </style>
+  </head>
+  <body>
+    <button class="menu">메뉴 1</button>
+    <!-- ul.submenu>li*2{메뉴 $} -->
+    <ul class="submenu">
+      <li>메뉴 1</li>
+      <li>메뉴 2</li>
+    </ul>
+    <script>
+      let menu = document.querySelector(".menu");
+      let submenu = document.querySelector(".submenu");
+      menu.addEventListener("click", () => {
+        submenu.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

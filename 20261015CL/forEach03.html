@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/forEach03.css" />
+  </head>
+  <body>
+    <ul id="productList">
+      <!-- JS 출력 -->
+    </ul>
+    <script>
+      const proList = document.querySelector("#productList");
+
+      const products = [
+        {
+          name: "티셔츠",
+          price: 15000,
+          desc: "이쁜 티셔츠",
+          img: "/images/2026.10.15 - img/images/tshirt.jpg",
+        },
+        {
+          name: "청바지",
+          price: 25000,
+          desc: "이쁜 청바지",
+          img: "/images/2026.10.15 - img/images/jeans.jpg",
+        },
+        {
+          name: "운동화",
+          price: 45000,
+          desc: "이쁜 운동화",
+          img: "/images/2026.10.15 - img/images/shoes.jpg",
+        },
+      ];
+
+      products.forEach((item, index) => {
+        proList.innerHTML += `
+      <li>
+        <img src="${item.img}" alt="${item.desc}">
+        <h3>상품 이름: ${item.name}</h3>
+        <p>상품 설명: ${item.desc}</p>
+        <p>상품 가격: ${item.price.toLocaleString()}원</p>
+      </li>
+    `;
+      });
+    </script>
+    <!-- <script>
+      // 변수명은 첫 글자는 소문자 O 숫자로 시작 X
+      let proList = document.querySelector("#productList");
+      //   console.log(proList);
+      // 더미 데이터
+      let products = [
+        {
+          name: "티셔츠",
+          price: 15000,
+          desc: "이쁜 티셔츠",
+          img: "images/2026.10.15 - img/images/tshirt.jpg",
+        },
+        {
+          name: "청바지",
+          price: 25000,
+          desc: "이쁜 청바지",
+          img: "images/2026.10.15 - img/images/jeans.jpg",
+        },
+        {
+          name: "운동화",
+          price: 45000,
+          desc: "이쁜 운동화",
+          img: "images/2026.10.15 - img/images/shoes.jpg",
+        },
+      ];
+      //   console.log(products);
+      products.forEach((item, index) => {
+        // console.log(item, index);
+        // console.log(item.name);
+        // console.log(item.price);
+        proList.innerHTML += `
+              <li>
+            <img src="${item.img}" alt="${item.desc}">
+        <h3>상품 이름 : ${item.name}</h3>
+        <p>상품 설명 : ${item.desc}</p>
+        <p>상품 가격 : ${item.price}</p>
+      </li>
+        `;
+      });
+    </script> -->
+  </body>
+</html>

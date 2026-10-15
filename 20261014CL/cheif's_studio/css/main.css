@@ -1,0 +1,183 @@
+/* 글꼴 연결 */
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+@font-face {
+  font-family: "BusanDandiGothic";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/2610132210@l/l/부산단디고딕L.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-display: swap;
+}
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+/* 반응형 CSS 연결 */
+@import url(responsive.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+ul,
+li {
+  list-style: none;
+}
+img {
+  display: block;
+  /* width: 100%; */
+}
+body {
+  background-color: #eee;
+}
+/* 공통영역 */
+.inner {
+  width: 90%;
+  max-width: 1280px;
+  margin: auto;
+}
+/* 전체 레이아웃 */
+.wrap {
+  width: 100%;
+}
+/* 상단 */
+header {
+  width: 100%;
+  height: 80px;
+  background-color: #333;
+}
+header .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+header h1 {
+  /* font-family: "Carter One", system-ui; */
+  font-family: "Fjalla One", sans-serif;
+  background: linear-gradient(
+    110deg,
+    #697583 0%,
+    #ffffff 15%,
+    #a8b4c2 25%,
+    #ffffff 35%,
+    #65717f 48%,
+    #ffffff 58%,
+    #b8c2cf 72%,
+    #ffffff 85%,
+    #687482 100%
+  );
+  background-size: 200% 100%;
+  background-position: 100% 50%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-weight: 900;
+  letter-spacing: 1px;
+  filter: drop-shadow(0 3px 3px rgba(253, 253, 253, 0.45));
+  animation: silverShine 30s ease-in-out infinite;
+}
+@keyframes silverShine {
+  0%,
+  100% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 0% 50%;
+  }
+}
+header .nav {
+  display: flex;
+  gap: 20px;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 5px;
+}
+.menu a {
+  color: #fff;
+  padding: 2px;
+}
+.search a {
+  color: #fff;
+}
+.hamburger {
+  display: none;
+}
+.hamburger a {
+  color: #fff;
+}
+.icon {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 1%;
+}
+.intro-text {
+  margin-top: 10%;
+}
+.intro-text p {
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+}
+.filter {
+  display: flex;
+  padding: 1% 1.5%;
+  color: #fff;
+  background-color: #333;
+  border-radius: 8px;
+  gap: 5px;
+}
+.filter-btn,
+.filter-btn i {
+  color: white;
+}
+.intro-text h2 {
+  font-size: 30px;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 5px;
+}
+/* 리스트 */
+.card-list ul {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 30px 25px;
+}
+.card-list > ul > li {
+  background-color: #fff;
+  border-radius: 7px;
+  overflow: hidden;
+}
+.card-list > ul > li > img {
+  width: 100%;
+  display: block;
+}
+.country {
+  display: flex;
+  gap: 10px;
+  padding: 3px;
+}
+.country p {
+  font-size: 25px;
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+.country img {
+  width: 35px;
+}
+.card-info {
+  padding: 5%;
+}
+.card-info h3 {
+  padding: 4% 0;
+}

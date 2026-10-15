@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- button#menuBtn${메뉴 $}*3  ※$가 숫자를 자동으로 인식해서 배정해줌-->
+    <button id="menuBtn1">메뉴 1</button>
+    <button id="menuBtn2">메뉴 2</button>
+    <button id="menuBtn3">메뉴 3</button>
+    <div id="menu1" style="display: none">메뉴 내용 1</div>
+    <div id="menu2" style="display: none">메뉴 내용 2</div>
+    <div id="menu3" style="display: none">메뉴 내용 3</div>
+    <script>
+      // 메뉴 클릭 → 메뉴 내용이 보이는 함수
+      function toggleMenu(id) {
+        console.log(id);
+
+        let menu = document.getElementById(id);
+        console.log(menu);
+        if (menu.style.display === "none") {
+          menu.style.display = "block";
+        } else {
+          menu.style.display = "none";
+        }
+      }
+      let menuBtn1 = document.getElementById("menuBtn1");
+      let menuBtn2 = document.getElementById("menuBtn2");
+      let menuBtn3 = document.getElementById("menuBtn3");
+
+      menuBtn1.addEventListener("click", () => {
+        toggleMenu("menu1");
+      });
+      menuBtn2.addEventListener("click", () => {
+        toggleMenu("menu2");
+      });
+      menuBtn3.addEventListener("click", () => {
+        toggleMenu("menu3");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>함수</title>
+  </head>
+  <body>
+    <script>
+      // 함수 : 동작해야할 기능을 묶은 명령.
+      // alert() : 자바스크립트에 포함되어 있는 여러 함수 중 하나. → 내장 함수
+
+      // 내가 만드는 함수
+      // ex)두수를 더하는 함수 만들기
+
+      function addNum(a, b, c) {
+        // (a, b, C)는 매개변수 : 함수가 값을 전달하는 변수
+        console.log("함수 호출");
+
+        // 실행 코드
+        let sum = a + b + c;
+        document.write(`${sum}<br>`);
+      }
+      addNum(1, 10, 50);
+      addNum(2, 20, 10);
+      addNum(3, 50, 30);
+      addNum(); // undefined는 찾지를 못했다는 의미. 경로 확인 필요.
+    </script>
+  </body>
+</html>

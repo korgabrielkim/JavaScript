@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button style="color: cornflowerblue" onclick="sayHi()">클릭</button> <br />
+    <button onclick="alert()">알림창 클릭</button> <br />
+    <script>
+      function sayHi() {
+        console.log("안녕");
+      }
+      function glad(username, age, address) {
+        document.write(
+          `${age}세 ${address}에 사시는 ${username}님 환영합니다.<br>`,
+        );
+      }
+      glad("하경미", 20, "동구");
+      glad("홍길동", 30, "수성구");
+      glad("김그린", 40, "중구");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="colorBtn">색 바꾸기</button>
+    <script>
+      // 색 변경 함수
+      function changeColor() {
+        document.body.style.backgroundColor = "skyblue";
+      }
+      //   changeColor(); : 함수가 바로 실행이 됨.
+
+      // document.querySelector("#colorBtn").addEventListener("")
+      let colorBtn = document.querySelector("#colorBtn");
+      colorBtn.addEventListener("click", changeColor); // 함수 뒤에 ()를 붙히면 바로 실행됨.
+    </script>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+/* S-Core Dream webfont: visitors do not need the font installed locally. */
+@import url("https://cdn.jsdelivr.net/gh/fonts-archive/S-CoreDream/subsets/S-CoreDream-dynamic-subset.css");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 40px 24px;
+  background: #f5f7fa;
+  color: #243247;
+  font-family: "S-Core Dream", "에스코어 드림", "Malgun Gothic", sans-serif;
+  line-height: 1.65;
+}
+
+#productList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: 28px;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+#productList li {
+  min-width: 0;
+  margin: 0;
+  padding: 14px 14px 22px;
+  background: #fff;
+  border: 1px solid #e7ebf0;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgb(29 44 65 / 7%);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+#productList li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 32px rgb(29 44 65 / 12%);
+}
+
+#productList img {
+  display: block;
+  width: 100%;
+  height: 240px;
+  object-fit: contain;
+  object-position: center;
+  margin: 0 0 18px;
+  background: #edf1f5;
+  border-radius: 18px;
+}
+
+#productList h3 {
+  margin: 0 8px 10px;
+  color: #172b4d;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+#productList p {
+  margin: 0 8px;
+  color: #5b6878;
+  font-size: 0.96rem;
+  overflow-wrap: anywhere;
+}
+
+#productList p + p {
+  margin-top: 10px;
+}
+
+#productList p:last-child {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid #edf0f4;
+  color: #176b55;
+  font-size: 1.08rem;
+  font-weight: 700;
+}
+
+@media (max-width: 560px) {
+  body {
+    padding: 24px 16px;
+  }
+
+  #productList {
+    gap: 18px;
+  }
+
+  #productList li {
+    padding: 12px 12px 20px;
+    border-radius: 16px;
+  }
+
+  #productList img {
+    margin-bottom: 15px;
+    display: block;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #productList li {
+    transition: none;
+  }
+
+  #productList li:hover {
+    transform: none;
+  }
+}
