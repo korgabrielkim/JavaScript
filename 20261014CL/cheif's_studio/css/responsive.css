@@ -1,4 +1,4 @@
-/* 1000px */
+menu/* 1000px */
 @media (max-width: 1000px) {
   .card-list ul {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -8,12 +8,22 @@
 @media (max-width: 768px) {
   .menu {
     display: none;
+    background-color: blue;
+    position: absolute;
+    top: 43px;
+    right: -30px;
+    width: 125px;
+    flex-direction: column;
+  }
+  .menu.show {
+    display: flex;
   }
   .hamburger {
     display: block;
   }
   header .nav {
     justify-content: flex-end;
+    position: relative;
   }
   header {
     height: 65px;
@@ -27,13 +37,13 @@
   }
   /* list */
   .card-list ul {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    /* grid-template-columns: repeat(2, minmax(0, 1fr)); */
   }
 }
 /* 480px */
 @media (max-width: 480px) {
   .card-list ul {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
+    /* grid-template-columns: repeat(1, minmax(0, 1fr)); */
   }
 }
 /* 390px */

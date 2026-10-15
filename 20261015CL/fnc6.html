@@ -25,7 +25,12 @@
       let menu = document.querySelector(".menu");
       let submenu = document.querySelector(".submenu");
       menu.addEventListener("click", () => {
-        submenu.classList.toggle("active");
+        // submenu.classList.toggle("active");
+        if (submenu.classList.contains("active")) {
+          submenu.classList.remove("active");
+        } else {
+          submenu.classList.add("active");
+        }
       });
     </script>
   </body>

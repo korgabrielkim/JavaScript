@@ -1,15 +1,5 @@
 /* 글꼴 연결 */
-@import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Carter+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
-@font-face {
-  font-family: "BusanDandiGothic";
-  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/2610132210@l/l/부산단디고딕L.woff2")
-    format("woff2");
-  font-weight: 300;
-  font-display: swap;
-}
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+@import url(fonts.css);
 /* 반응형 CSS 연결 */
 @import url(responsive.css);
 * {
@@ -129,7 +119,7 @@ header .nav {
 }
 .intro-text p {
   font-size: 20px;
-  font-family: "Inter", sans-serif;
+  font-family: "OngleipParkDahyeon";
 }
 .filter {
   display: flex;
@@ -145,14 +135,16 @@ header .nav {
 }
 .intro-text h2 {
   font-size: 30px;
-  font-family: "Inter", sans-serif;
+  font-family: "OngleipParkDahyeon";
   margin-bottom: 5px;
 }
 /* 리스트 */
 .card-list ul {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  /* grid-template-columns: repeat(4, minmax(0, 1fr)); */
   gap: 30px 25px;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  /* auto-fit을 주고 최소 픽셀을 배정해야 함 */
 }
 .card-list > ul > li {
   background-color: #fff;
@@ -170,7 +162,7 @@ header .nav {
 }
 .country p {
   font-size: 25px;
-  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family: "OwnglyphYuntaeng";
 }
 .country img {
   width: 35px;
